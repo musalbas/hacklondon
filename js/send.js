@@ -1,5 +1,6 @@
 Parse.initialize("9qiSnFq1twgMpo2YcGr1U4kfkyC4mDru6uqK704n", "aT59N4qjCqrE3zh5IfF8bUEpiwEFDRSDnvpQJLWM");  
  $('#myForm').submit(function() {
+     event.preventDefault();
     // get all the inputs into an array.
      alert("sent");
     var $inputs = $('#myForm :input');
