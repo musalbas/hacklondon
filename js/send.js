@@ -20,7 +20,7 @@ Parse.initialize("9qiSnFq1twgMpo2YcGr1U4kfkyC4mDru6uqK704n", "aT59N4qjCqrE3zh5If
     newMessage.save(null, {
   success: function(newMessage) {
     // Execute any logic that should take place after the object is saved.
-    console.log('New object created with objectId: ' + gameScore.id);
+    console.log('New object created with');
   },
   error: function(newMessage, error) {
     alert("Message did not send. Please send your message directly to fares@kcltech.com");
