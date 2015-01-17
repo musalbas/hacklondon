@@ -42,7 +42,7 @@ String.prototype.rightChars = function(n){
 
     return $('<span></span>')
       .css('color', color)
-      .css('background-color', backgroundColor);
+      .css('background-color', 'rgba(255, 255, 255, 0.5)');
   };
 
   isNumber = function (n) {

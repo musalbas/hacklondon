@@ -16,6 +16,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
         		<script src="js/jquery.typer.js"></script>
+        <script src="//www.parsecdn.com/js/parse-1.3.3.min.js"></script>
 
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
@@ -569,10 +570,11 @@ Yes! There will be hackathons all over the country this Spring run by many diffe
 				</header>
 				<div class="content style4 featured">
 					<div class="container 75%">
-						<form method="post" action="#">
+                        
+						<form id="myForm">
 							<div class="row 50%">
-								<div class="6u"><input type="text" placeholder="Name" /></div>
-								<div class="6u"><input type="text" placeholder="Email" /></div>
+								<div class="6u"><input id="input1" name='name' type="text" placeholder="Name" /></div>
+								<div class="6u"><input name='email' type="text" placeholder="Email" /></div>
 							</div>
 							<div class="row 50%">
 								<div class="12u"><textarea name="message" placeholder="Message"></textarea></div>
@@ -605,5 +607,6 @@ Yes! There will be hackathons all over the country this Spring run by many diffe
 				</div>
 			</section>
             <script type="text/javascript">$('[data-typer-targets]').typer() </script>
+            <script type="text/javascript" src="js/send.js"> </script>
 	</body>
 </html>
