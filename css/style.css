@@ -820,7 +820,7 @@
 	{
 		position: relative;
 		margin: 0;
-		background-image:			url('images/overlay.png'),			url('../images/london.jpeg');
+		background-image:			url('images/overlay.png'),			url('../images/london2.jpg');
 		background-size:			auto,								cover;
 		background-position:		top;
 		background-repeat:			repeat,								no-repeat;
