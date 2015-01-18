@@ -16,11 +16,12 @@ Parse.initialize("9qiSnFq1twgMpo2YcGr1U4kfkyC4mDru6uqK704n", "aT59N4qjCqrE3zh5If
     newMessage.set("name",values.name);
     newMessage.set("email",values.email);
     newMessage.set("message",values.message);
-
+     var success = false;
     newMessage.save(null, {
   success: function(newMessage) {
     // Execute any logic that should take place after the object is saved.
     console.log('message successfully sent');
+      success=true;
   },
   error: function(newMessage, error) {
     alert("Message did not send. Please send your message directly to fares@kcltech.com");
@@ -28,6 +29,8 @@ Parse.initialize("9qiSnFq1twgMpo2YcGr1U4kfkyC4mDru6uqK704n", "aT59N4qjCqrE3zh5If
     // error is a Parse.Error with an error code and message.
     console.log('Failed to create new object, with error code: ' + error.message);
   }
+        if (success == false)
+        {alert("Message did not send. Please send your message directly to fares@kcltech.com");}
 });   
  });
 
