@@ -1,5 +1,8 @@
 Parse.initialize("9qiSnFq1twgMpo2YcGr1U4kfkyC4mDru6uqK704n", "aT59N4qjCqrE3zh5IfF8bUEpiwEFDRSDnvpQJLWM");  
- $('#myForm').submit(function() {
+     var success = false;
+ 
+
+$('#myForm').submit(function() {
      event.preventDefault();
     // get all the inputs into an array.
     var $inputs = $('#myForm :input');
@@ -16,7 +19,6 @@ Parse.initialize("9qiSnFq1twgMpo2YcGr1U4kfkyC4mDru6uqK704n", "aT59N4qjCqrE3zh5If
     newMessage.set("name",values.name);
     newMessage.set("email",values.email);
     newMessage.set("message",values.message);
-     var success = false;
     newMessage.save(null, {
   success: function(newMessage) {
     // Execute any logic that should take place after the object is saved.
@@ -30,8 +32,6 @@ Parse.initialize("9qiSnFq1twgMpo2YcGr1U4kfkyC4mDru6uqK704n", "aT59N4qjCqrE3zh5If
     console.log('Failed to create new object, with error code: ' + error.message);
   }
         }); 
-        if (success == false)
-        {alert("Message did not send. Please send your message directly to fares@kcltech.com")};
-  
- });
+         });
+
 
