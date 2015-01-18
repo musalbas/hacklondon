@@ -59,6 +59,8 @@
 				<div class="content dark style1 featured">
                     <h1 style="font-size: 2.5em;">Frequently Asked Questions</h1>
 					<div class="container">
+                                                <article>
+
 						<div class="row">
 							<div class="4u">
 								<section>
@@ -199,8 +201,7 @@ A laptop is pretty much essential. Some adventurous types bring desktops. Probab
                                                         
 						</div>
                         
-                        
-                    
+                        <div class="read-more-content">
                         <div class="row">
 
                             <div class="4u">
@@ -285,13 +286,17 @@ Yes! There will be hackathons all over the country this Spring run by many diffe
 								</section>
 							</div>
 						</div>
+                        </div>
+                        
 						<div class="row">
 							<div class="12u">
 								<footer>
-									<a href="#fourth" class="button scrolly">Got More questions?</a>
+                                    <!--div class="button scroll read-more-toggle">Read More</div-->
+									<a href="#fourth" class="button scrolly">My questions still hasn't been answered!</a>
 								</footer>
 							</div>
 						</div>
+                        </article>
 					</div>
 				</div>
 			</section>
@@ -606,6 +611,15 @@ Yes! There will be hackathons all over the country this Spring run by many diffe
 					</ul>
 				</div>
 			</section>
+            <script src="/bower_components/readmore/readmore.min.js"></script>
+        <script>$('article').readmore({moreLink: '<a href="#">More FAQs</a>',
+lessLink: '<a href="#">Close FAQs</a>',collapsedHeight: 630,speed: 2000,
+           beforeToggle: function(trigger, element, expanded) {
+        if(expanded) { // The "Close" link was clicked
+          $('html, body').animate({scrollTop: $(element).offset().top}, {duration: 500});
+        }
+      }
+    });</script>
             <script type="text/javascript">$('[data-typer-targets]').typer() </script>
             <script type="text/javascript" src="js/send.js"> </script>
 	</body>

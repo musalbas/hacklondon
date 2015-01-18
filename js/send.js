@@ -37,3 +37,24 @@ $('#myForm').submit(function() {
         alert('Message Not Sent.\nClick Again or contact fares@kcltech.com directly.\nError message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
         return true;
     }
+ 
+function readMoreFAQ(){
+    $('#article').readmore({
+  speed: 75,
+  lessLink: '<a href="#">Read less</a>'
+});
+}
+/*$('.read-more-content').addClass('hide');
+
+// Set up the toggle.
+$('.read-more-toggle').on('click', function() {
+  $('.read-more-content').toggleClass('hide');
+    console.log("hide");
+});*/
+$('.read-more-toggle').on('click', function() {
+  $('.read-more-content').readmore({
+  speed: 75,
+  lessLink: '<a href="#">Read less</a>'
+});
+    console.log("hide");
+});
