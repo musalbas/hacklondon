@@ -34,6 +34,6 @@ $('#myForm').submit(function() {
         }); 
  });
  window.onerror = function(msg, url, linenumber) {
-        alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+        alert('Message Not Sent.\nClick Again or contact fares@kcltech.com directly.\nError message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
         return true;
     }
