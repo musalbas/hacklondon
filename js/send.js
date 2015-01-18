@@ -22,7 +22,7 @@ $('#myForm').submit(function() {
     newMessage.save(null, {
   success: function(newMessage) {
     // Execute any logic that should take place after the object is saved.
-    console.log('message successfully sent');
+    alert('message successfully sent');
       success=true;
   },
   error: function(newMessage, error) {
