@@ -29,8 +29,9 @@ Parse.initialize("9qiSnFq1twgMpo2YcGr1U4kfkyC4mDru6uqK704n", "aT59N4qjCqrE3zh5If
     // error is a Parse.Error with an error code and message.
     console.log('Failed to create new object, with error code: ' + error.message);
   }
+        }); 
         if (success == false)
         {alert("Message did not send. Please send your message directly to fares@kcltech.com")};
-});   
+  
  });
 
