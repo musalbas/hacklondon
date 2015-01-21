@@ -35,6 +35,13 @@ ga('create', 'UA-58680248-1', 'auto');
 ga('send', 'pageview');
 
     </script>
+    <style>
+      /* a hacky solution for a hacky plugin */
+      #more-link, #less-link {
+        width: 110px !important;
+        margin: 10px auto !important;
+      }
+    </style>
   </head>
   <body>
 
@@ -87,7 +94,7 @@ ga('send', 'pageview');
       <div class="content dark style1 featured">
         <h1 style="font-size: 2.5em;">Frequently Asked Questions</h1>
         <div class="container">
-          <article>
+          <div id="faqs">
 
             <div class="row">
 
@@ -104,38 +111,26 @@ ga('send', 'pageview');
               <!-- </div> -->
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>When is HackLondon?</h3>
-                  </header>
-                  <p>28 February - 1 March 2015</p>
-                </section>
+                <h3>When is HackLondon?</h3>
+                <p>28 February - 1 March 2015</p>
               </div>
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3> Who’s organising HackLondon?</h3>
-                  </header>
-                  <p>
-                    <a href="http://kcltech.com">KCL Tech</a>,
-                    <a href="http://uclutech.com/">UCL TechSoc</a>, and
-                    <a href="http://ucle.co/">UCL Entrepreneurs</a>.
-                  </p>
-                </section>
+                <h3> Who’s organising HackLondon?</h3>
+                <p>
+                  <a href="http://kcltech.com">KCL Tech</a>,
+                  <a href="http://uclutech.com/">UCL TechSoc</a>, and
+                  <a href="http://ucle.co/">UCL Entrepreneurs</a>.
+                </p>
               </div>
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>Wait, what's a hackathon?</h3>
-                  </header>
-                  <p>
-                    Hackathons are events where people compete to build interesting technical projects in under 24 hours.
-                    Students come together, form teams, share ideas, and help each other build awesome things.
-                    All skill levels are highly welcome, so don't be intimidated if you don't feel your coding is up to scratch.
-                  </p>
-                </section>
+                <h3>Wait, what's a hackathon?</h3>
+                <p>
+                  Hackathons are events where people compete to build interesting technical projects in under 24 hours.
+                  Students come together, form teams, share ideas, and help each other build awesome things.
+                  All skill levels are highly welcome, so don't be intimidated if you don't feel your coding is up to scratch.
+                </p>
               </div>
 
             </div> <!-- end row -->
@@ -143,37 +138,25 @@ ga('send', 'pageview');
             <div class="row">
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>Who can attend HackLondon?</h3>
-                  </header>
-                  <p>
-                    Any enrolled undergraduate or postgraduate student, or graduates who are less than a year out of university.
-                    Upon arrival, hackers will be required to show their student ID card in order to be allowed entry.
-                  </p>
-                </section>
+                <h3>Who can attend HackLondon?</h3>
+                <p>
+                  Any enrolled undergraduate or postgraduate student, or graduates who are less than a year out of university.
+                  Upon arrival, hackers will be required to show their student ID card in order to be allowed entry.
+                </p>
               </div>
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>Is it really free?</h3>
-                  </header>
-                  <p>Yes.</p>
-                </section>
+                <h3>Is it really free?</h3>
+                <p>Yes.</p>
               </div>
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>Even food?</h3>
-                  </header>
-                  <p>
-                    Yep.
-                    Thanks to our awesome sponsors.
-                    Drinks and frequent snacks are free too.
-                  </p>
-                </section>
+                <h3>Even food?</h3>
+                <p>
+                  Yep.
+                  Thanks to our awesome sponsors.
+                  Drinks and frequent snacks are free too.
+                </p>
               </div>
 
             </div> <!-- end row -->
@@ -181,82 +164,58 @@ ga('send', 'pageview');
             <div class="row">
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>Do I need to have a team?</h3>
-                  </header>
-                  <p>
-                    You're welcome to make a team before the event, but loads of people come without a team.
-                    At the start of the event, we'll be sure to help everyone find a team.
-                    Your team members can be from other universities/schools.
-                    One of the best things about hackathons is meeting hackers from all over the country.
-                  </p>
-                </section>
+                <h3>Do I need to have a team?</h3>
+                <p>
+                  You're welcome to make a team before the event, but loads of people come without a team.
+                  At the start of the event, we'll be sure to help everyone find a team.
+                  Your team members can be from other universities/schools.
+                  One of the best things about hackathons is meeting hackers from all over the country.
+                </p>
               </div>
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>What time should I arrive?</h3>
-                  </header>
-                  <p>We'll let you know soon.
-                  </p>
-                </section>
+                <h3>What time should I arrive?</h3>
+                <p>We'll let you know soon.
+                </p>
               </div>
 
-                <div class="4u">
-                  <section>
-                    <header>
-                      <h3>I can't write code but still want to attend. Help?</h3>
-                    </header>
-                    <p>
-                      The hackathon community welcomes you with open arms - plenty of mentors want to help you make your first hack a reality.
-                      We'll have mentors on site to teach you lots of new skills and guide you towards creating your first hack.
-                      All the students are very friendly and willing to help each other out.
-                      Come along and be a part of the tens of thousands of hackers worldwide.
-                    </p>
-                  </section>
-                </div>
+              <div class="4u">
+                <h3>I can't write code but still want to attend. Help?</h3>
+                <p>
+                  The hackathon community welcomes you with open arms - plenty of mentors want to help you make your first hack a reality.
+                  We'll have mentors on site to teach you lots of new skills and guide you towards creating your first hack.
+                  All the students are very friendly and willing to help each other out.
+                  Come along and be a part of the tens of thousands of hackers worldwide.
+                </p>
+              </div>
 
             </div>
 
             <div class="row">
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>Can I build my hack before the event?</h3>
-                  </header>
-                  <p>
-                    No. It's unfair and immediately disqualifies you from presenting or winning any prizes. You can think of ideas, just don't start building them. You can of course use libraries, frameworks, and templates.
-                  </p>
-                </section>
+                <h3>Can I build my hack before the event?</h3>
+                <p>
+                  No. It's unfair and immediately disqualifies you from presenting or winning any prizes. You can think of ideas, just don't start building them. You can of course use libraries, frameworks, and templates.
+                </p>
               </div>
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>For how long can I hack?</h3>
-                  </header>
-                  <p>
-                    You'll have a straight 24 hours to hack, so that's 12pm to 12pm.
-                    Of course, you are allowed to sleep, but we find many people stay awake the whole time.
-                    We'll have some fun activities running throughout though, so you can catch a break often.
-                  </p>
-                </section>
+                <h3>For how long can I hack?</h3>
+                <p>
+                  You'll have a straight 24 hours to hack, so that's 12pm to 12pm.
+                  Of course, you are allowed to sleep, but we find many people stay awake the whole time.
+                  We'll have some fun activities running throughout though, so you can catch a break often.
+                </p>
               </div>
 
               <div class="4u">
-                <section>
-                  <header>
-                    <h3>What do I bring?</h3>
-                  </header>
-                  <p>
-                    A laptop is pretty much essential, but some adventurous people bring desktops.
-                    Also, don't forget the charging cables for whatever electronics you bring along!
-                    Warm and comfortable clothes, toiletries, and a change of clothes would be good too.
-                  </p>
-                </section>
+                <h3>What do I bring?</h3>
+                <p>
+                  A laptop is pretty much essential, but some adventurous people bring desktops.
+                  Also, don't forget the charging cables for whatever electronics you bring along!
+                  Warm and comfortable clothes, toiletries, and a change of clothes would be good too.
+                </p>
               </div>
 
             </div ><!-- end row -->
@@ -266,37 +225,25 @@ ga('send', 'pageview');
               <div class="row">
 
                 <div class="4u">
-                  <section>
-                    <header>
-                      <h3>How large can teams be?</h3>
-                    </header>
-                    <p>
-                      To be eligible for prizes, teams need to be 1-4 people.
-                      If you're okay not being eligible for prizes, you can have as many people on your team as you want.
-                    </p>
-                  </section>
+                  <h3>How large can teams be?</h3>
+                  <p>
+                    To be eligible for prizes, teams need to be 1-4 people.
+                    If you're okay not being eligible for prizes, you can have as many people on your team as you want.
+                  </p>
                 </div>
 
                 <div class="4u">
-                  <section>
-                    <header>
-                      <h3>Do you reimburse for transport?</h3>
-                    </header>
-                    <p>
-                      Yes, MLH are able to reimburse attending hackers up to £40 for travellers outside of London. You can request reimbursement at the event. We love MLH.
-                    </p>
-                  </section>
+                  <h3>Do you reimburse for transport?</h3>
+                  <p>
+                    Yes, MLH are able to reimburse attending hackers up to £40 for travellers outside of London. You can request reimbursement at the event. We love MLH.
+                  </p>
                 </div>
 
                 <div class="4u">
-                  <section>
-                    <header>
-                      <h3>Can I sleep at the venue?</h3>
-                    </header>
-                    <p>
-                      Yes! We’ll do our best to make the venue really nice for you to crash. You are welcome to leave overnight to sleep in a real bed, but many hackers sleep over at the venue!
-                    </p>
-                  </section>
+                  <h3>Can I sleep at the venue?</h3>
+                  <p>
+                    Yes! We’ll do our best to make the venue really nice for you to crash. You are welcome to leave overnight to sleep in a real bed, but many hackers sleep over at the venue!
+                  </p>
                 </div>
 
               </div> <!-- end row -->
@@ -305,30 +252,22 @@ ga('send', 'pageview');
 
 
                 <div class="4u">
-                  <section>
-                    <header>
-                      <h3>Is there a code of conduct?</h3>
-                    </header>
-                    <p>
-                      Yes.
-                      We follow <a href="http://hackcodeofconduct.org/majorleaguehacking">MLH’s code of conduct</a>.
-                      MLH is dedicated to providing a fun, harassment-free experience for everyone.
-                      We expect all of our attendees, sponsors, volunteers, and staff to be respectful and considerate of others.
-                      We require all to agree with this code of conduct and organisers will enforce it throughout the event.
-                    </p>
-                  </section>
+                  <h3>Is there a code of conduct?</h3>
+                  <p>
+                    Yes.
+                    We follow <a href="http://hackcodeofconduct.org/majorleaguehacking">MLH’s code of conduct</a>.
+                    MLH is dedicated to providing a fun, harassment-free experience for everyone.
+                    We expect all of our attendees, sponsors, volunteers, and staff to be respectful and considerate of others.
+                    We require all to agree with this code of conduct and organisers will enforce it throughout the event.
+                  </p>
                 </div>
 
                 <div class="4u">
-                  <section>
-                    <header>
-                      <h3>Are there other hackathons I can go to? </h3>
-                    </header>
-                    <p>
-                      Yes! There will be hackathons all over the country this Spring run by many different universities.
-                      <a href="https://uk.mlh.io/seasons/2015-eu/events">MLH’s lineup of hackathons in Europe</a>.
-                    </p>
-                  </section>
+                  <h3>Are there other hackathons I can go to? </h3>
+                  <p>
+                    Yes! There will be hackathons all over the country this Spring run by many different universities.
+                    <a href="https://uk.mlh.io/seasons/2015-eu/events">MLH’s lineup of hackathons in Europe</a>.
+                  </p>
                 </div>
 
               </div> <!-- end row -->
@@ -336,13 +275,12 @@ ga('send', 'pageview');
 
             <div class="row">
               <div class="12u">
-                <footer>
                   <!--div class="button scroll read-more-toggle">Read More</div-->
                   <a href="#fourth" class="button scrolly">My question still hasn't been answered!</a>
-                </footer>
               </div>
             </div>
-          </article>
+
+          </div> <!--end faqs -->
         </div>
       </div>
     </section>
@@ -490,9 +428,9 @@ ga('send', 'pageview');
 
     <script src="bower_components/readmore/readmore.min.js"></script>
     <script>
-      $('article').readmore({
-        moreLink: '<a href="#">More FAQs</a>',
-        lessLink: '<a href="#">Close FAQs</a>',
+      $('#faqs').readmore({
+        moreLink: '<a id="more-link" href="#">More FAQs</a>',
+        lessLink: '<a id="less-link" href="#">Close FAQs</a>',
         collapsedHeight: 600,
         speed: 2000,
         beforeToggle: function(trigger, element, expanded) {
