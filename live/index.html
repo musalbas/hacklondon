@@ -1,0 +1,81 @@
+<!doctype html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <title>Hackathon.js Example</title>
+
+  <!-- SEO -->
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <!-- iOS Icon -->
+  <link rel="apple-touch-icon" href="">
+  <link rel="apple-touch-icon" sizes="76x76" href="">
+  <link rel="apple-touch-icon" sizes="120x120" href="">
+  <link rel="apple-touch-icon" sizes="152x152" href="">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+
+  <!-- Dependency CSS Files & Google Fonts -->
+  <link type="text/css" rel="stylesheet" href="assets/css/reset.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/pure.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/pure-responsive.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/pure-marketing.css" />
+  <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+
+  <!-- Backwards compatibility -->
+  <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script><![endif]-->
+
+  <!-- Hackathon.js framework! -->
+  <link type="text/css" rel="stylesheet" href="hackathon.css" />
+  <script src="hackathon.js"></script>
+
+</head>
+<body data-hackathonjs="true" data-hackathonjs-variables='{ "foo": "bar (I can write variables, woohoo!)" }'>
+
+<!-- Colour transitioning? Yes please. Format is "colourHex:backgroundHex" and separated by commas. -->
+<header data-wall id="wall" data-colours="FFFFFF:C23E0A, FFFFFF:0A66C2, FFFFFF:C7C40C">
+
+  <div id="left"></div>
+  <div id="text"></div>
+  <div id="right"></div>
+
+  <!-- We make entry tags which tell Hackathon.js what to show and when. Supports HTML & Mustache.js! -->
+  <entry data-until="28 February 2015 08:00">Hackathon opens in {{starts}}</entry>
+  <entry data-from="28 February 2015 08:00" data-until="28 February 2015 09:00">Registration has opened!</entry>
+  <entry data-from="28 February 2015 09:00" data-until="28 February 2015 12:00">Hacking starts in {{starts}}</entry>
+  <entry data-from="28 February 2015 12:00" data-until="28 February 2015 13:00" data-start>Hacking has started!</entry>
+  <entry data-from="28 February 2015 13:00" data-until="01 March 2015 10:00">{{time}}</entry>
+  <entry data-from="01 March 2015 10:00" data-until="01 March 2015 12:00">Hacking stops in {{ends}}</entry>
+  <entry data-from="01 March 2015 12:00" data-until="01 March 2015 14:00" data-end>Presentations have started!</entry>
+  <entry data-from="28 February 2015 14:00" data-until="28 February 2015 16:00">Prizes are being announced!</entry>
+  <entry data-from="28 February 2015 16:00">Thanks for attending Hackathon!</entry>
+
+  <!--
+    Ok, how do I use this damn thing?
+
+    Each message is an <entry>. The first message has only a "data-until" attribute (aka before the hackathon) and the last message only has a "data-from" O(aka when the hackathon finishes). Nobody will particularly see them, but they might and you don't want it looking empty.
+
+    Besides the first and last just mentioned, each <entry> has a "data-from" and "data-to" with a normal date. This is when the message should be shown and hidden for. You can use certain {{variables}} like that, such as {{end}} for a countdown of the end of the message or {{foo}} as you can see as a "data-hackathonjs-variables" variable in <body>. No big deal.
+
+    The entry where time at "date-from" is the actual hacking start time (ie people can start writing code), simply append ".. data-start .." as following. No value in the attribute, just the "data-start". Likewise for the entry where "data-from" is the ending hacking time.
+
+    Reach out if that's confusing, but that should be it. Some examples above, go nuts.
+  -->
+</header>
+
+<div class="wall-content">
+  <iframe src="placeholder.html" frameborder="0"></iframe>
+</div>
+
+<!-- Google Analytics via HTML, anyone? -->
+<div data-googleanalytics="UA-XXXXXXXX-X"></div>
+
+</body>
+</html>
