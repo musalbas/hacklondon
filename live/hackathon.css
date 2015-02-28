@@ -27,7 +27,7 @@ header#wall #left {
   min-height: 160px;
   height: 100%;
   display: inline-block;
-  background: url(http://i.imgur.com/JHJfMjM.png) no-repeat center center transparent;
+  background: url(logo.png) no-repeat center center transparent;
   background-size: auto 120px;
   vertical-align: top;
 }
@@ -94,7 +94,7 @@ header#wall #right {
   min-height: 160px;
   height: 100%;
   display: inline-block;
-  background: url(http://i.imgur.com/JHJfMjM.png) no-repeat center center transparent;
+  background: url(logo.png) no-repeat center center transparent;
   background-size: auto 120px;
   vertical-align: top;
 }
