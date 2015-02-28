@@ -35,6 +35,7 @@
 
 				$form.find('.form-button-submit')
 					.on('click', function() {
+                        alert("hi");
 						$(this).parents('form').submit();
 						return false;
 					});
