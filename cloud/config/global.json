@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "HackLondon": {
+            "applicationId": "9qiSnFq1twgMpo2YcGr1U4kfkyC4mDru6uqK704n", 
+            "masterKey": "9UtqYQYvRPkhwYCrZ7yUdB50Mvx6AzoiZpvGf4Y5"
+        }, 
+        "_default": {
+            "link": "HackLondon"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.3"
+    }
+}
